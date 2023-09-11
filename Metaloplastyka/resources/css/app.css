@@ -2,10 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
-    .h-01 {
+    .h-1\/10 {
         height: 10%;
     }
-    .h-09 {
+    .h-9\/10 {
         height: 90%;
+    }
+    .bg-welding {
+        background-image: url("../../public/images/welding.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    .bg-warehouse {
+        background-image: url("../../public/images/warehouse.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    .menu_item:hover .dropdown_item {
+        opacity: 1;
+        height: auto;
+        overflow: none;
+        transform: translateY(0);
+    }
+    .dropdown_item {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transform: translateY(-10%);
     }
 }

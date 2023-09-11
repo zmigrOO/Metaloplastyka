@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('components/m-about');
+})->name('/');
+Route::get('/hurtownia', function () {
+    return view('components/h-about');
+})->name('/hurtownia');
