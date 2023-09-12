@@ -12,12 +12,12 @@
 </head>
 
 <body class="antialiased">
-    <div class="h-full w-full fixed bg-welding"></div>
-    <div class="fixed h-1/10 w-full bg-opacity-80 bg-stone-400">
+    <div class="h-full w-full -z-10 fixed bg-welding"></div>
+    <div class="fixed h-1/10 z-20 w-full bg-opacity-80 bg-stone-400">
         <div class="relative -translate-y-1/2 top-1/2 w-fit">
             <span class="mr-4 text-4xl">Metaloplastyka</span>
         </div>
-        <div class="float-right">
+        <div class="absolute -translate-y-1/2 right-0">
             <ul class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
                 <li>
                     <a href="/hurtownia" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
@@ -64,7 +64,7 @@
             </ul>
         </div>
     </div>
-    <main class="h-9/10 w-full fixed bottom-0 -z-0 overflow-scroll bg-stone-300 bg-opacity-75">
+    <main class="h-9/10 w-full fixed bottom-0 -z-0 overflow-y-scroll bg-stone-300 bg-opacity-75">
         {{ $slot }}
         <footer class="bg-stone-500 block w-full bg-opacity-75">coded with laravel by Patryk Żmigrodzki @2023</footer>
     </main>
