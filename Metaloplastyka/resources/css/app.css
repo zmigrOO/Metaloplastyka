@@ -36,4 +36,23 @@
         overflow: hidden;
         transform: translateY(-10%);
     }
+    li>a>span::after{
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #000;
+        transition: width .3s;
+        position: relative;
+        top: 0%;
+        left: 0px;
+    }
+    li:hover>a>span::after{
+        width: 100%;
+        transition: width .3s;
+    }
+    main>div{
+        min-height: calc(90vh - 40px);
+    }
 }
+

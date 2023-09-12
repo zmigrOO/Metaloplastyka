@@ -14,10 +14,10 @@
 <body class="antialiased">
     <div class="h-full w-full fixed -z-10 bg-warehouse"></div>
     <div class="mr-4 fixed h-1/10 w-full z-20 bg-opacity-60 bg-stone-400">
-        <div class="relative -translate-y-1/2 top-1/2 w-fit pr-4">
+        <div class="relative -translate-y-1/2 ml-6 top-1/2 w-fit">
             <span class="text-4xl">Hurtownia</span>
         </div>
-        <div class="absolute -translate-y-1/2 right-0">
+        <div class="absolute bottom-0 right-0">
             <ul class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
                 <li>
                     <a href="/" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
@@ -38,20 +38,20 @@
                         </svg>
                     </a>
                     <ul
-                        class="dropdown_item transition duration-300 z-50 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
+                        class="dropdown_item transition duration-300 md:absolute z-10 top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
                         <li>
-                            <a href="#" class="flex px-4 z-50 py-3 hover:bg-gray-50">
-                                Web development
+                            <a href="#" class="flex px-4 py-3 z-10 transition hover:bg-gray-50">
+                                <span>Meble</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex px-4 py-3 hover:bg-gray-50">
-                                Web Design
+                            <a href="#" class="flex px-4 py-3 transition hover:bg-gray-50">
+                                <span>Ogrodzenia</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex px-4 py-3 hover:bg-gray-50">
-                                Machine Learning
+                            <a href="#" class="flex px-4 py-3 transition hover:bg-gray-50">
+                                <span>Malowanie proszkowe</span>
                             </a>
                         </li>
                     </ul>
@@ -64,9 +64,9 @@
             </ul>
         </div>
     </div>
-    <main class="h-9/10 w-full fixed bottom-0 z-0 overflow-scroll bg-stone-300 bg-opacity-60">
+    <main class="h-9/10 w-full fixed bottom-0 z-0 overflow-y-scroll bg-stone-300 bg-opacity-60">
         {{ $slot }}
-        <footer class="bg-stone-500 block w-full bg-opacity-60">coded with laravel by Patryk Żmigrodzki @2023</footer>
+        <x-footer/>
     </main>
     </div>
 </body>
